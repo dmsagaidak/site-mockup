@@ -9,8 +9,8 @@ interface Props {
 
 const Order: React.FC<Props> = ({services}) => {
   return (
-    <div className="m-3" style={{height: '90vh'}}>
-      <p>Your order details</p>
+    <div className="m-3" style={{height: '500px', width: '500px'}}>
+      <h2>Your order details</h2>
       <OrderServices services={services}/>
       <Link to="buy" className="btn btn-success me-4">Buy</Link>
       <Link to="/" className="btn btn-danger">Cancel</Link>
