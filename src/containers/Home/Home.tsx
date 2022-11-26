@@ -12,14 +12,14 @@ interface Props {
 
 const Home: React.FC<Props> = ({services, toOrder,addToOrderList}) => {
   return (
-    <div className="m-2">
+    <div className="m-2" style={{height: '90vh'}}>
       <h2 className="text-center">The best company ever</h2>
       <p className="text-center">We will make your events unforgettable!</p>
       <div className="text-center">
         <Link to="order" className="btn btn-success me-3">Place an order</Link>
         <Link to="contacts" className="btn btn-primary">Contact us!</Link>
       </div>
-      <div className="row">
+      <div className="row mt-4">
         <div className="col-5">
           <h3>Our services</h3>
           <Services services={services} addToOrderList={addToOrderList}/>

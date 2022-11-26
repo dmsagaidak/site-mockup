@@ -57,7 +57,9 @@ function App() {
             <Contacts/>
           )}/>
           <Route path="order" element={(
-            <Order/>
+            <Order
+            services={toOrder}
+            />
           )}/>
           <Route path="*" element={(
             <div className="d-flex flex-row">

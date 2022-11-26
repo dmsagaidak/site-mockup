@@ -11,6 +11,7 @@ const OrderList: React.FC<Props> = ({services}) => {
   const navigate = useNavigate();
   return (
     <>
+      <h4>You've chosen </h4>
       <OrderServices services={services}/>
       <button className="btn btn-success"
               onClick={() => navigate('/order')}
