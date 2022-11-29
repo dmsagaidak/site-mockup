@@ -3,7 +3,7 @@ import dronePic from "../../assets/img1.png"
 
 const AboutUs = () => {
   return (
-    <div className="p-2" style={{height: '90vh'}}>
+    <div className="p-2" style={{height: '500px'}}>
       <img src={dronePic} alt="our pic" style={{float: 'right', paddingLeft: '15px'}}/>
       <h2>Who we are?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium

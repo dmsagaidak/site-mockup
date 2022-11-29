@@ -6,6 +6,7 @@ import AboutUs from "./containers/AboutUs/AboutUs";
 import Contacts from "./containers/Contacts/Contacts";
 import Order from "./containers/Order/Order";
 import Footer from "./components/Footer/Footer";
+import Buy from "./containers/Buy/Buy"
 import {Service, ServiceToOrder} from "./types";
 import progGif from '../src/assets/programmer.gif'
 
@@ -62,6 +63,9 @@ function App() {
             <Order
             services={toOrder}
             />
+          )}/>
+          <Route path="buy" element={(
+            <Buy/>
           )}/>
           <Route path="*" element={(
             <div className="d-flex flex-row">
